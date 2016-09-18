@@ -2,7 +2,7 @@
 App.room2Poster = App.cable.subscriptions.create { channel: 'PostChannel', room: 'room2' },
 
   received: (data) ->
-    $('#message-list-2').append("<li>#{data.message}</li>")
+    $('#message-list-2').append("<li>#{data.message.message}</li>")
 
   post: (msg) -> @perform 'post', message: msg
 

@@ -1,7 +1,7 @@
 class TestsController < ApplicationController
 
   def test
-    PostJob.perform_later
+    NotificationJob.perform_later(@current_user)
   end
 
 end

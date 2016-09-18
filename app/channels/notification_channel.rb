@@ -1,7 +1,7 @@
 class NotificationChannel < ApplicationCable::Channel
 
   def subscribed
-    # TODO
+    stream_from "web_notifications_#{current_user.id}"
   end
 
 end
