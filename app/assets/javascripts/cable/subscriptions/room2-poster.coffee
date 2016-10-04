@@ -15,5 +15,5 @@ App.room2Poster = App.cable.subscriptions.create { channel: 'PostChannel', room:
     console.log 'room2Poster disconnected'
 
 # Called when the subscription is rejected by the server
-  rejected : () ->
+  rejected: () ->
     alert('rejected!')

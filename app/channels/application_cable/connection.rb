@@ -1,5 +1,6 @@
 module ApplicationCable
-  # This is the place where you authorize the incoming connection, and proceed to establish it if all is well
+  # This is the place where you authorize the incoming connection,
+  # and proceed to establish it if all is well
   class Connection < ActionCable::Connection::Base
 
     identified_by :current_user

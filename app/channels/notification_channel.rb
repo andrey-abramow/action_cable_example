@@ -1,7 +1,8 @@
 class NotificationChannel < ApplicationCable::Channel
 
+  # NotificationChannel.broadcast_to(user, {some data})
   def subscribed
-    stream_from "web_notifications_#{current_user.id}"
+    stream_for current_user
   end
 
 end
